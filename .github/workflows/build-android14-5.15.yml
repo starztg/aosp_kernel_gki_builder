@@ -214,7 +214,7 @@ jobs:
       if: env.ENABLE_KERNELSU == 'true'
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
-        curl -LSs "${{ env.KERNELSU_INSTALLER }}" | bash -s ${{ env.KERNELSU_TAG }}
+        curl -LSs https://github.com/KernelSU-Next/KernelSU-Next/blob/next-susfs-dev/kernel/setup.sh | bash -s next-susfs-dev
         echo "UPLOADNAME=-KernelSU-Next" >> $GITHUB_ENV
 
     - name: Setting the kernel compilation configuration
