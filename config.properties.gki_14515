@@ -1,5 +1,5 @@
-KERNEL_SOURCE=https://git.codelinaro.org/clo/la/kernel/common.git
-KERNEL_SOURCE_BRANCH=aosp-new/android14-5.15
+KERNEL_SOURCE=https://github.com/dmXq-development/android_kernel_samsung_sm8550
+KERNEL_SOURCE_BRANCH=android15-stable
 KERNEL_CONFIG=gki_defconfig
 KERNEL_IMAGE_NAME=Image
 ARCH=arm64
