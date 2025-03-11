@@ -215,7 +215,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
         curl -LSs "${{ env.KERNELSU_INSTALLER }}" | bash -s ${{ env.KERNELSU_TAG }}
-        echo "UPLOADNAME=-KernelSU" >> $GITHUB_ENV
+        echo "UPLOADNAME=-KernelSU-Next" >> $GITHUB_ENV
 
     - name: Setting the kernel compilation configuration
       run: |
